@@ -24,6 +24,7 @@
         <action
             android:id="@+id/action_mainFragment_to_quizQuestionsFragment"
             app:destination="@id/quizQuestionsFragment"
+            app:enterAnim="@android:anim/fade_in"
             app:popUpTo="@id/mainFragment" />
     </fragment>
     <fragment
@@ -33,7 +34,8 @@
         tools:layout="@layout/fragment_quiz_questions" >
         <action
             android:id="@+id/action_quizQuestionsFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -43,6 +45,7 @@
         <action
             android:id="@+id/action_resultFragment_to_mainFragment"
             app:destination="@id/mainFragment"
+            app:enterAnim="@android:anim/fade_in"
             app:popUpTo="@id/nav_graph" />
     </fragment>
 </navigation>

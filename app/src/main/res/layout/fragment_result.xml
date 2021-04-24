@@ -26,12 +26,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:gravity="center"
                 android:text="Result"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:padding="10dp"
+                android:background="@drawable/default_option_border_bg"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="179dp"
@@ -45,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:textColor="#9D018786"
                 android:text="Hey, Congratulation!"
                 android:textSize="25sp"/>
 
@@ -53,10 +56,10 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="100dp"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="#BFCC0000"
                 android:text="UserName"/>
 
             <TextView
@@ -64,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:textColor="@color/design_default_color_secondary_variant"
                 android:textSize="20sp"
                 android:text="Your score is 9 out of 10"/>
 

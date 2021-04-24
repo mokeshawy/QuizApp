@@ -39,7 +39,7 @@ class ResultFragment : Fragment() {
 
         binding.tvName.text = userName
 
-       binding.tvScore.text = "Your score is ( $correctAnswer ) out of ( $totalQuestions )"
+       binding.tvScore.text = "Your score is $correctAnswer out of $totalQuestions"
 
 
         binding.btnFinish.setOnClickListener {

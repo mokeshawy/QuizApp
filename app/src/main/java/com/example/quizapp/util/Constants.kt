@@ -38,10 +38,10 @@ object Constants {
         val quest3 = QuestionModel( 3 ,
             "What country dos this flag belong to ?",
             R.drawable.ic_flag_brazil ,
-                "argentina",
-            "australia" ,
-            "armenia" ,
-            "brazil" ,
+                "Argentina",
+            "Australia" ,
+            "Armenia" ,
+            "Brazil" ,
             4)
         questionsList.add(quest3)
 
