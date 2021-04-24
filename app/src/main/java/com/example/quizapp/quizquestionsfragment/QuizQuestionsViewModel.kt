@@ -7,8 +7,10 @@ import android.graphics.drawable.Drawable
 import android.util.Log
 import android.widget.*
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.navigation.fragment.findNavController
 import com.example.quizapp.R
 import com.example.quizapp.model.QuestionModel
 import com.example.quizapp.util.Constants
@@ -22,6 +24,7 @@ class QuizQuestionsViewModel : ViewModel(){
     private var mQuestionsList : ArrayList<QuestionModel>? = null
     private var mSelectedOptionPosition = 0
     private var mCorrectAnswer          = 0
+    private var mUserName : String?     = null
 
     fun setQuestions( context           : Context ,
                     btn_submit          : Button,
@@ -103,7 +106,7 @@ class QuizQuestionsViewModel : ViewModel(){
                            tv_option_one    : TextView,
                            tv_option_tow    : TextView,
                            tv_option_three  : TextView,
-                           tv_option_four  : TextView ){
+                           tv_option_four   : TextView ){
         when(answer){
 
             1 ->{
@@ -122,17 +125,20 @@ class QuizQuestionsViewModel : ViewModel(){
 
     }
 
-    fun submitQuiz( btn_submit      : Button,
-                    context         : Context ,
-                    progressBar     : ProgressBar ,
-                    tv_progress_bar : TextView ,
-                    tv_question     : TextView ,
-                    iv_flag_country : ImageView ,
-                    tv_option_one   : TextView ,
-                    tv_option_tow   : TextView ,
-                    tv_option_three : TextView ,
-                    tv_option_four  : TextView
+    fun submitQuiz( questionsFragment   : QuizQuestionsFragment ,
+                    btn_submit          : Button,
+                    context             : Context ,
+                    progressBar         : ProgressBar ,
+                    tv_progress_bar     : TextView ,
+                    tv_question         : TextView ,
+                    iv_flag_country     : ImageView ,
+                    tv_option_one       : TextView ,
+                    tv_option_tow       : TextView ,
+                    tv_option_three     : TextView ,
+                    tv_option_four      : TextView
     ){
+
+        mUserName = questionsFragment.arguments?.getString(Constants.USER_NAME)
 
         if( mSelectedOptionPosition == 0 ){
             mCurrentPosition ++
@@ -150,9 +156,9 @@ class QuizQuestionsViewModel : ViewModel(){
                             tv_option_three,
                             tv_option_four)
                 }else ->{
-                    Toast.makeText(context ,
-                            "You have successfully completed the Quiz",
-                            Toast.LENGTH_SHORT).show()
+
+                    var bundle = bundleOf(Constants.USER_NAME to mUserName , Constants.CORRECT_ANSWER to mCorrectAnswer.toString() , Constants.TOTAL_QUESTIONS to mQuestionsList!!.size.toString())
+                    questionsFragment.findNavController().navigate(R.id.action_quizQuestionsFragment_to_resultFragment , bundle)
                 }
             }
 

@@ -87,7 +87,8 @@ class QuizQuestionsFragment : Fragment() {
 
 
         binding.btnSubmit.setOnClickListener {
-            quizQuestionsViewModel.submitQuiz( binding.btnSubmit ,
+            quizQuestionsViewModel.submitQuiz( this,
+                    binding.btnSubmit ,
                     requireActivity(),
                     binding.progressBar ,
                     binding.tvProgressBar ,
