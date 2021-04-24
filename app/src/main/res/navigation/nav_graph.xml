@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/quizQuestionsFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -20,10 +20,20 @@
         android:id="@+id/mainFragment"
         android:name="com.example.quizapp.mainfragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_quizQuestionsFragment"
+            app:destination="@id/quizQuestionsFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/quizQuestionsFragment"
         android:name="com.example.quizapp.quizquestionsfragment.QuizQuestionsFragment"
         android:label="fragment_quiz_questions"
         tools:layout="@layout/fragment_quiz_questions" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.quizapp.resultfragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
 </navigation>

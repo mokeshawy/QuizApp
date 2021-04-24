@@ -29,5 +29,8 @@ class MainFragment : Fragment() {
         binding.lifecycleOwner          = this
         binding.mainFragmentVarModel    = mainFragmentViewModel
 
+        binding.btnStart.setOnClickListener {
+            mainFragmentViewModel.register(requireActivity() , view)
+        }
     }
 }

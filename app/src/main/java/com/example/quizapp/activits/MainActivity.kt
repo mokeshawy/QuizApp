@@ -28,9 +28,10 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when(destination.id){
 
-                R.id.splashFragment -> supportActionBar!!.hide()
-                R.id.mainFragment   -> supportActionBar!!.hide()
-
+                R.id.splashFragment             -> supportActionBar!!.hide()
+                R.id.mainFragment               -> supportActionBar!!.hide()
+                R.id.quizQuestionsFragment      -> supportActionBar!!.hide()
+                R.id.resultFragment             -> supportActionBar!!.hide()
                 else -> supportActionBar!!.show()
 
             }
