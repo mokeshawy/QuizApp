@@ -6,13 +6,13 @@
     <data>
         <variable
             name="mainFragmentVarModel"
-            type="com.example.quizapp.mainfragment.MainFragmentViewModel" />
+            type="com.example.quizapp.viewModel.MainFragmentViewModel" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".mainfragment.MainFragment"
+        tools:context=".fragment.MainFragment"
         android:orientation="vertical"
         android:gravity="center">
 

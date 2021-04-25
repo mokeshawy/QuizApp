@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.quizapp.splashfragment.SplashFragment"
+        android:name="com.example.quizapp.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.quizapp.mainfragment.MainFragment"
+        android:name="com.example.quizapp.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizQuestionsFragment"
-        android:name="com.example.quizapp.quizquestionsfragment.QuizQuestionsFragment"
+        android:name="com.example.quizapp.fragment.QuizQuestionsFragment"
         android:label="fragment_quiz_questions"
         tools:layout="@layout/fragment_quiz_questions" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.quizapp.resultfragment.ResultFragment"
+        android:name="com.example.quizapp.fragment.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action

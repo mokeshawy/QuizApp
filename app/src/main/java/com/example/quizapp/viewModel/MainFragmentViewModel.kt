@@ -1,8 +1,7 @@
-package com.example.quizapp.mainfragment
+package com.example.quizapp.viewModel
 
 import android.content.Context
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.lifecycle.MutableLiveData

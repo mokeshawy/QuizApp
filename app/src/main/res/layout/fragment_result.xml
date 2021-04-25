@@ -6,13 +6,13 @@
     <data>
         <variable
             name="resultVarModel"
-            type="com.example.quizapp.resultfragment.ResultViewModel" />
+            type="com.example.quizapp.viewModel.ResultViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".resultfragment.ResultFragment">
+        tools:context=".fragment.ResultFragment">
 
         <LinearLayout
             android:layout_width="match_parent"

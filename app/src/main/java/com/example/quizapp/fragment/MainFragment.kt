@@ -1,16 +1,13 @@
-package com.example.quizapp.mainfragment
+package com.example.quizapp.fragment
 
 import android.os.Bundle
-import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
-import com.example.quizapp.R
 import com.example.quizapp.databinding.FragmentMainBinding
+import com.example.quizapp.viewModel.MainFragmentViewModel
 
 class MainFragment : Fragment() {
 

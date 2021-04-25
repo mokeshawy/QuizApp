@@ -1,10 +1,8 @@
-package com.example.quizapp.quizquestionsfragment
+package com.example.quizapp.viewModel
 
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Typeface
-import android.graphics.drawable.Drawable
-import android.util.Log
 import android.widget.*
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
@@ -13,6 +11,7 @@ import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import com.example.quizapp.R
 import com.example.quizapp.model.QuestionModel
+import com.example.quizapp.fragment.QuizQuestionsFragment
 import com.example.quizapp.util.Constants
 import com.squareup.picasso.Picasso
 
@@ -125,17 +124,17 @@ class QuizQuestionsViewModel : ViewModel(){
 
     }
 
-    fun submitQuiz( questionsFragment   : QuizQuestionsFragment ,
-                    btn_submit          : Button,
-                    context             : Context ,
-                    progressBar         : ProgressBar ,
-                    tv_progress_bar     : TextView ,
-                    tv_question         : TextView ,
-                    iv_flag_country     : ImageView ,
-                    tv_option_one       : TextView ,
-                    tv_option_tow       : TextView ,
-                    tv_option_three     : TextView ,
-                    tv_option_four      : TextView
+    fun submitQuiz(questionsFragment   : QuizQuestionsFragment,
+                   btn_submit          : Button,
+                   context             : Context,
+                   progressBar         : ProgressBar,
+                   tv_progress_bar     : TextView,
+                   tv_question         : TextView,
+                   iv_flag_country     : ImageView,
+                   tv_option_one       : TextView,
+                   tv_option_tow       : TextView,
+                   tv_option_three     : TextView,
+                   tv_option_four      : TextView
     ){
 
         mUserName = questionsFragment.arguments?.getString(Constants.USER_NAME)
