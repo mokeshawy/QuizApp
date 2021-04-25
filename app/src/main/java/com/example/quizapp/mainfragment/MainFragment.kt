@@ -26,6 +26,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Connect whit view model
         binding.lifecycleOwner          = this
         binding.mainFragmentVarModel    = mainFragmentViewModel
 
