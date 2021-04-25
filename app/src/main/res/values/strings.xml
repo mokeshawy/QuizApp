@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">QuizApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
     <string name="title_splash_text">QuizApp ?</string>
     <string name="tl_bar_title_quiz_question">Quiz App ?</string>
-    <string name="tv_title_question">What country dos this flag belong to ?</string>
+    <string name="tv_title_question">Which country does this flag belong to ?</string>
+    <string name="enter_your_name">Enter Your name</string>
 </resources>
