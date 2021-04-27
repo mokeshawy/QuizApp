@@ -1,4 +1,4 @@
-package com.example.quizapp.fragment
+package com.example.quizapp.splashfragment
 
 import android.os.Bundle
 import android.os.Handler

@@ -1,4 +1,4 @@
-package com.example.quizapp.fragment
+package com.example.quizapp.resultfragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.quizapp.R
 import com.example.quizapp.databinding.FragmentResultBinding
 import com.example.quizapp.util.Constants
-import com.example.quizapp.viewModel.ResultViewModel
+import com.example.quizapp.resultfragment.ResultViewModel
 
 class ResultFragment : Fragment() {
 

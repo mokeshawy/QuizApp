@@ -1,4 +1,4 @@
-package com.example.quizapp.viewModel
+package com.example.quizapp.resultfragment
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.example.quizapp.viewModel
+package com.example.quizapp.mainfragment
 
 import android.content.Context
 import android.view.View
@@ -12,6 +12,7 @@ import com.example.quizapp.util.Constants
 
 class MainFragmentViewModel : ViewModel() {
 
+    // input enter user name
     var etEnterYourName = MutableLiveData<String>("")
 
     // fun register user name

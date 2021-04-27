@@ -1,4 +1,4 @@
-package com.example.quizapp.fragment
+package com.example.quizapp.quizquestionsfragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.quizapp.databinding.FragmentQuizQuestionsBinding
-import com.example.quizapp.viewModel.QuizQuestionsViewModel
 
 class QuizQuestionsFragment : Fragment() {
 

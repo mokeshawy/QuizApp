@@ -1,4 +1,4 @@
-package com.example.quizapp.viewModel
+package com.example.quizapp.quizquestionsfragment
 
 import android.content.Context
 import android.graphics.Color
@@ -11,20 +11,23 @@ import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import com.example.quizapp.R
 import com.example.quizapp.model.QuestionModel
-import com.example.quizapp.fragment.QuizQuestionsFragment
 import com.example.quizapp.util.Constants
 import com.squareup.picasso.Picasso
 
 class QuizQuestionsViewModel : ViewModel(){
 
-
+    // Call Question model
     private var question            = MutableLiveData<QuestionModel>()
+    // Global variable Current position
     private var mCurrentPosition    = 1
+    // Global List from Questions model
     private var mQuestionsList : ArrayList<QuestionModel>? = null
+    // Global variable SelectedOptionPosition whit default value change value whene select user answer
     private var mSelectedOptionPosition = 0
     private var mCorrectAnswer          = 0
     private var mUserName : String?     = null
 
+    // fun set question call getQuestion from Constants and show on layout after register user
     fun setQuestions( context           : Context ,
                     btn_submit          : Button,
                     progressBar         : ProgressBar ,
