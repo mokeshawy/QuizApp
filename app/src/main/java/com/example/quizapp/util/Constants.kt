@@ -8,13 +8,14 @@ object Constants {
     const val USER_NAME         : String ="user_name"
     const val TOTAL_QUESTIONS   : String = "total_questions"
     const val CORRECT_ANSWER    : String = "correct_answer"
+    const val Question_TEXT    : String = "Which country does this flag belong to ?"
     fun getQuestions() : ArrayList<QuestionModel>{
 
         val questionsList = ArrayList<QuestionModel>()
 
         // Question1
         val quest1 = QuestionModel( 1 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_argentina ,
                 "Argentina",
             "Australia" ,
@@ -25,7 +26,7 @@ object Constants {
 
         // Question2
         val quest2 = QuestionModel( 2 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_finland ,
                 "Norway",
             "Russia" ,
@@ -36,7 +37,7 @@ object Constants {
 
         // Question3
         val quest3 = QuestionModel( 3 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_brazil ,
                 "Argentina",
             "Australia" ,
@@ -47,7 +48,7 @@ object Constants {
 
         // Question4
         val quest4 = QuestionModel( 4 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_belgium ,
             "Bahamas",
             "Belgium" ,
@@ -58,7 +59,7 @@ object Constants {
 
         // Question5
         val quest5 = QuestionModel( 5 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_of_fiji ,
             "Gabon",
             "France" ,
@@ -69,7 +70,7 @@ object Constants {
 
         // Question6
         val quest6 = QuestionModel( 6,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_deutschland ,
             "Germany",
             "Georgia" ,
@@ -80,7 +81,7 @@ object Constants {
 
         // Question7
         val quest7 = QuestionModel( 7 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_denemark ,
             "Dominica",
             "Egypt" ,
@@ -91,7 +92,7 @@ object Constants {
 
         // Question8
         val quest8 = QuestionModel( 8 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_india ,
             "Ireland",
             "Iran" ,
@@ -102,7 +103,7 @@ object Constants {
 
         // Question9
         val quest9 = QuestionModel( 9 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_newzealand ,
             "Australia",
             "New Zealand" ,
@@ -113,7 +114,7 @@ object Constants {
 
         // Question10
         val quest10 = QuestionModel( 10 ,
-            "What country dos this flag belong to ?",
+            Question_TEXT,
             R.drawable.ic_flag_kuwait ,
             "Kuwait",
             "Jordan" ,
